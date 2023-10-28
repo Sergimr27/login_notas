@@ -1,0 +1,205 @@
+/* Estilo para el cuerpo de la página */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* Organiza los elementos en columna */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Establece la altura mínima del cuerpo al 100% de la altura de la ventana */
+}
+
+
+/* Estilo para el encabezado (header) */
+
+.header1 {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+/* Estilo para el título de inicio de sesión */
+
+.login-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    font-family: Arial;
+    border: 2px solid rgb(0, 174, 255);
+    box-shadow: 5px 5px 10px black;
+}
+
+
+/* Estilo para el contenedor principal */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* Estilo para el logo */
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+
+/* Estilo para el contenedor de video */
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/* Estilo para el video */
+
+video {
+    object-fit: cover;
+    /* Ajusta el tamaño del video para cubrir el contenedor */
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Estilo para el contenedor de inicio de sesión */
+
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid rgb(0, 225, 255);
+    max-width: 500px;
+    width: 100%;
+}
+
+
+/* Estilo para campos de formulario */
+
+.form-control {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Transiciones de estilo al interactuar */
+    width: 100%;
+}
+
+
+/* Estilo para campos de formulario al pasar el mouse o enfocar */
+
+.form-control:hover,
+.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    /* Cambia el fondo a un degradado de texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Clip de fondo de texto para navegadores webkit */
+    color: transparent;
+    /* Hace el color del texto transparente */
+}
+
+
+/* Estilo para el botón de inicio de sesión */
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    /* Transiciones de estilo al interactuar */
+}
+
+
+/* Estilo para texto de error en rojo */
+
+.error_rojo {
+    color: red;
+}
+
+
+/* Estilo para el botón de inicio de sesión al pasar el mouse */
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+    box-shadow: 7px 7px 12px black;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    text-align: center;
+    margin: 0;
+}
+
+.footer .social-icons {
+    text-align: center;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* Estilos para diferentes tamaños de pantalla */
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10px;
+    }
+    .logo {
+        max-width: 150px;
+        position: static;
+    }
+    .login-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 680px) {
+    .logo {
+        max-width: 100px;
+    }
+}
